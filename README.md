@@ -148,7 +148,3 @@ Product-Incident-Simulator/
     ├── package.json
     └── src/
 ```
-
-## License
-
-MIT
