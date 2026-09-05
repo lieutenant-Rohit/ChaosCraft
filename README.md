@@ -5,10 +5,10 @@ A chaos engineering platform for simulating production incidents, injecting faul
 ## Architecture
 
 ```
-┌─────────────┐     ┌──────────────────┐     ┌─────────┐
-│  Simulator   │────▶│  Simulator       │────▶│  Redis   │
-│  UI (React)  │     │  Backend (Java)  │     │          │
-└─────────────┘     └──────────────────┘     └────┬────┘
+┌─────────────┐     ┌──────────────────┐      ┌─────────┐
+│  Simulator  │────▶│  Simulator       │ ────▶│  Redis  │
+│  UI (React) │     │  Backend (Java)  │      │         │
+└─────────────┘     └──────────────────┘      └────┬────┘
                                                    │
                      ┌──────────────────┐          │
                      │  Demo App        │◀─────────┘
@@ -16,7 +16,7 @@ A chaos engineering platform for simulating production incidents, injecting faul
                      └──────────────────┘
                             │
                      ┌──────▼──────┐
-                     │  Prometheus  │──▶ Grafana
+                     │  Prometheus │──▶ Grafana
                      └─────────────┘
 ```
 
